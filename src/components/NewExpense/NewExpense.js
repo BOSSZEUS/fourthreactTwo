@@ -8,6 +8,7 @@ const NewExpense = (props) => {
       ...enteredExpenseData,
       id: Math.random().toString()
     }
+    //lifting the expenseData up to parent componet i.e. app.js
     props.onAddExpense(expenseData)
   }
 
